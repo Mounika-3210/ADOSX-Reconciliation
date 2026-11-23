@@ -1,0 +1,22 @@
+START HERE
+========= 
+1. Install Python 3.10+ and Node.js LTS.
+2. Open this folder in VS Code.
+3. Backend terminal:
+   cd backend
+   python -m venv .venv
+   .\.venv\Scripts\Activate.ps1
+   pip install -r requirements.txt
+   python manage.py migrate
+   python manage.py load_sample
+   python manage.py test reconcile
+   python manage.py runserver
+4. Open a second terminal and run:
+   cd frontend
+   npm install
+   npm run dev
+5. Open http://localhost:5173 and select ORG-A or ORG-B.
+
+If PowerShell activation is blocked, run:
+Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
+then activate again.
